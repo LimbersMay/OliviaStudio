@@ -68,11 +68,27 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/fecha_nacimiento"
         android:inputType="date"
+        android:textColorHint="#78909C"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apellidoMaterno"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/apellidoMaterno" />
+
+    <EditText
+        android:id="@+id/nivelEstudiosDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nivel_estudios"
+        android:inputType="text"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fechaNacimiento" />
 </androidx.constraintlayout.widget.ConstraintLayout>
