@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">OliviaStudio</string>
+
+    <!-- Strings de la clase activity registro docente -->
+    <string name="registro_docente">Registro docente</string>
+    <string name="nombres_docente">Nombres</string>
+    <string name="apellido_paterno">Apellido paterno</string>
+    <string name="apellido_materno">Apellido materno</string>
+    <string name="fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="nivel_estudios">Nivel de estudios</string>
+    <string name="registrarse">Registrarse</string>
 </resources>
