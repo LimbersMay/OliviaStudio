@@ -15,4 +15,14 @@
     <string name="presentacion_docente">Bienvenida, Karla Rodríguez</string>
     <string name="mensaje_principal">Gestiona tu cuenta, información personal y más</string>
 
+    <string name="cuenta">Cuenta</string>
+    <string name="inf_personal">Información personal</string>
+    <string name="contra_seguridad">Contraseña y seguridad</string>
+    <string name="tema_app">Tema de la aplicación</string>
+
+    <string name="notificaciones">Notificaciones</string>
+    <string name="notif_mensajes">Notificaciones mensajes</string>
+
+    <string name="context_description">BOTON</string>
+
 </resources>
