@@ -10,31 +10,33 @@
         android:id="@+id/imageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="144dp"
         android:layout_marginTop="28dp"
+        android:contentDescription="@string/context_description"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/foto_perfil"
+        tools:ignore="ImageContrastCheck"
         tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
         android:text="@string/perfil"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton17" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton18" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
         android:layout_marginTop="44dp"
         android:text="@string/presentacion_docente"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -42,19 +44,22 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:text="@string/mensaje_principal"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <LinearLayout
-        android:layout_width="357dp"
-        android:layout_height="138dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="281dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="36dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="381dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,10 +68,10 @@
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Cuenta"
+                android:text="@string/cuenta"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -77,19 +82,21 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="346dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:text="Informacion peronal" />
+                android:text="@string/inf_personal" />
 
             <ImageButton
-                android:background="none"
                 android:id="@+id/imageButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@null"
+                android:contentDescription="@string/context_description"
+                app:srcCompat="@android:drawable/ic_media_play"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
         </LinearLayout>
 
@@ -100,19 +107,21 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="346dp"
+                android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:text="Contraseña y seguridad" />
+                android:text="@string/contra_seguridad" />
 
             <ImageButton
-                android:background="none"
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@null"
+                android:contentDescription="@string/context_description"
+                app:srcCompat="@android:drawable/ic_media_play"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -122,29 +131,34 @@
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="346dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
-                android:text="Tema de la aplicación" />
+                android:text="@string/tema_app" />
 
             <ImageButton
-                android:background="none"
                 android:id="@+id/imageButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@null"
+                android:contentDescription="@string/context_description"
+                app:srcCompat="@android:drawable/ic_media_play"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="73dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="286dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="534dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -153,10 +167,10 @@
 
             <TextView
                 android:id="@+id/textView16"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Notificaciones"
+                android:text="@string/notificaciones"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -170,8 +184,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Notificaciones"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                android:text="@string/notif_mensajes"
+                tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
         </LinearLayout>
     </LinearLayout>
@@ -179,51 +193,65 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="43dp"
+        android:layout_marginTop="72dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="687dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <ImageButton
             android:id="@+id/imageButton10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="none"
             android:layout_weight="1"
-            app:srcCompat="@drawable/notificacion_resized" />
+            android:background="@null"
+            android:contentDescription="@string/context_description"
+            app:srcCompat="@drawable/notificacion_resized"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="none"
-            app:srcCompat="@drawable/buscar" />
+            android:background="@null"
+            android:contentDescription="@string/context_description"
+            app:srcCompat="@drawable/buscar"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="none"
-            app:srcCompat="@drawable/cuenta" />
+            android:background="@null"
+            android:contentDescription="@string/context_description"
+            app:srcCompat="@drawable/cuenta"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="none"
-            app:srcCompat="@drawable/libro" />
+            android:background="@null"
+            android:contentDescription="@string/context_description"
+            app:srcCompat="@drawable/libro"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/imageButton18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="none"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="@string/context_description"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
