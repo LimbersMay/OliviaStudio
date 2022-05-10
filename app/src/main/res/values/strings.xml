@@ -9,4 +9,10 @@
     <string name="fecha_nacimiento">Fecha de nacimiento</string>
     <string name="nivel_estudios">Nivel de estudios</string>
     <string name="registrarse">Registrarse</string>
+
+    <!-- Strings de la clase activity perfil docente-->
+    <string name="perfil">Perfil</string>
+    <string name="presentacion_docente">Bienvenida, Karla Rodríguez</string>
+    <string name="mensaje_principal">Gestiona tu cuenta, información personal y más</string>
+
 </resources>
