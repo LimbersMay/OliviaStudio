@@ -25,7 +25,7 @@
         android:text="@string/perfil"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton17" />
 
     <TextView
         android:id="@+id/textView2"
@@ -48,16 +48,6 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="null"
-        android:drawableLeft="?attr/actionModeCloseDrawable"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:layout_width="357dp"
@@ -94,6 +84,7 @@
                 android:text="Informacion peronal" />
 
             <ImageButton
+                android:background="none"
                 android:id="@+id/imageButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -116,6 +107,7 @@
                 android:text="Contraseña y seguridad" />
 
             <ImageButton
+                android:background="none"
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -137,6 +129,7 @@
                 android:text="Tema de la aplicación" />
 
             <ImageButton
+                android:background="none"
                 android:id="@+id/imageButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -197,6 +190,40 @@
             android:background="none"
             android:layout_weight="1"
             app:srcCompat="@drawable/notificacion_resized" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="none"
+            app:srcCompat="@drawable/buscar" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="none"
+            app:srcCompat="@drawable/cuenta" />
+
+        <ImageButton
+            android:id="@+id/imageButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="none"
+            app:srcCompat="@drawable/libro" />
+
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="none"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
