@@ -99,7 +99,7 @@
                 android:text="@string/inf_personal" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/Inf_personal_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -124,7 +124,7 @@
                 android:text="@string/contra_seguridad" />
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/contra_seguridad_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -148,7 +148,7 @@
                 android:text="@string/tema_app" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/tema_aplicacion_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -195,7 +195,7 @@
             android:orientation="horizontal">
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/notificaciones_switch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
