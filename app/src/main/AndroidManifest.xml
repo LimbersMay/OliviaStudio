@@ -11,7 +11,7 @@
         android:theme="@style/Theme.OliviaStudio">
         <activity
             android:name=".PerfilDocenteActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RegistroDocenteActivity"
             android:exported="false" />
