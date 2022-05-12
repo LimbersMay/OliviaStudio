@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OliviaStudio">
         <activity
+            android:name=".PerfilDocenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroDocenteActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
