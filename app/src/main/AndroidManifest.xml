@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".SplashScreenInicioSesionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
             android:name=".activity_activity3_registro_alum"
             android:exported="false">
         </activity>
@@ -21,13 +25,16 @@
             android:name=".Categoria_Docente"
             android:exported="false"/>
         <activity
+            android:name=".Activity_Perfil_Estudiante"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreenPerfilDocenteActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".SplashScreenPerfilAlumnoActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".InicioActivity"
             android:exported="false" />
