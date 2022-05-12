@@ -14,6 +14,25 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
     }
+
+    public void iniciarSesion(View view){
+        Intent perfil = new Intent(this, activity_activity3_registro_alum.class);
+        startActivity(perfil);
+        finish();
+    }
+
+    public void registrarAlumno(View view){
+        Intent perfil = new Intent(this, activity_activity3_registro_alum.class);
+        startActivity(perfil);
+        finish();
+    }
+
+    public void registrarDocente(View view){
+        Intent perfil = new Intent(this, RegistroDocenteActivity.class);
+        startActivity(perfil);
+        finish();
+    }
+
     //estos son para login no los elimines...
     public void MensajeTwetter(View view) {
         Toast.makeText(this, "Twitter", Toast.LENGTH_SHORT).show();
