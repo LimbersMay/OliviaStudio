@@ -17,6 +17,12 @@
             android:name=".activity_activity3_registro_alum"
             android:exported="true"></activity>
         <activity
+            android:name=".Activity_Perfil_Estudiante"
+            android:exported="false" />
+        <activity
+            android:name=".activity_activity3_registro_alum"
+            android:exported="true"></activity>
+        <activity
             android:name=".MainActivity2"
             android:exported="false"></activity> <!-- @style/Theme.OliviaStudio -->
         <activity android:name=".Categoria_Docente" />

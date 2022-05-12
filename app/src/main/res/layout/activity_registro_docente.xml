@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroDocenteActivity">
+    tools:context=".RegistroDocenteActivity"
+    android:background="#202732">
 
     <TextView
         android:id="@+id/registroDocente"
@@ -15,18 +16,23 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nombreDocente"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
+        android:backgroundTint="@color/teal_700"
         android:ems="10"
         android:hint="@string/nombres_docente"
         android:inputType="text"
-        android:textColorHint="#78909C"
+        android:textColorHint="#26A69A"
+
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,14 +40,17 @@
 
     <EditText
         android:id="@+id/apellidoPaterno"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
+        android:backgroundTint="@color/teal_700"
         android:ems="10"
         android:hint="@string/apellido_paterno"
         android:inputType="text"
-        android:textColorHint="#78909C"
+        android:textColorHint="#26A69A"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,14 +58,17 @@
 
     <EditText
         android:id="@+id/apellidoMaterno"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
+        android:backgroundTint="@color/teal_700"
         android:ems="10"
         android:hint="@string/apellido_materno"
         android:inputType="text"
-        android:textColorHint="#78909C"
+        android:textColorHint="#26A69A"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,14 +76,17 @@
 
     <EditText
         android:id="@+id/fechaNacimiento"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
+        android:backgroundTint="@color/teal_700"
         android:ems="10"
         android:hint="@string/fecha_nacimiento"
         android:inputType="date"
-        android:textColorHint="#78909C"
+        android:textColorHint="#26A69A"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,27 +94,69 @@
 
     <EditText
         android:id="@+id/nivelEstudiosDocente"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
+        android:backgroundTint="@color/teal_700"
         android:ems="10"
         android:hint="@string/nivel_estudios"
         android:inputType="text"
-        android:textColorHint="#78909C"
+        android:textColorHint="#26A69A"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fechaNacimiento" />
+
+    <EditText
+        android:id="@+id/nivelEstudiosDocente2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/teal_700"
+        android:ems="10"
+        android:hint="@string/codigoPostal"
+        android:inputType="text"
+        android:textColorHint="#26A69A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fechaNacimiento" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/boton2drawable"
         android:onClick="registrarse"
         android:text="@string/registrarse"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nivelEstudiosDocente" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/boton2drawable"
+        android:onClick="registrarse"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nivelEstudiosDocente" />
 </androidx.constraintlayout.widget.ConstraintLayout>
