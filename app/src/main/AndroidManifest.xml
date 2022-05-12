@@ -20,6 +20,11 @@
         <activity
             android:name=".InicioActivity"
             android:exported="true" />
+            android:name=".PerfilDocenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroDocenteActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
