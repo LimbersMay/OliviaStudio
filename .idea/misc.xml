@@ -3,18 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
+        <entry key="..\:/Users/Kenneth/Desktop/ISC/INNOVATECNM 2022/OliviaStudio/app/src/main/res/layout/activity_main2.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/Kenneth/Desktop/ISC/INNOVATECNM 2022/OliviaStudio/app/src/main/res/layout/activity_splash_screen_cerrar_sesion.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/Kenneth/Desktop/ISC/INNOVATECNM 2022/OliviaStudio/app/src/main/res/layout/activity_splash_screen_inicio_sesion.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/Kenneth/Desktop/ISC/INNOVATECNM 2022/OliviaStudio/app/src/main/res/layout/activity_splash_screen_perfil_alumno.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_activity3_registro_alum.xml" value="0.18229166666666666" />
-        <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_categoria_docente.xml" value="0.33" />
         <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_main2.xml" value="0.18229166666666666" />
-        <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_perfil_docente.xml" value="0.33" />
+        <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_perfil_docente.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_registro_alumno.xml" value="0.33" />
         <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_registro_docente.xml" value="0.25" />
         <entry key="..\:/Users/limbe/Documents/Proyectos personales/ProyectosColaborativos/OliviaStudio/app/src/main/res/layout/activity_registro_estudiante.xml" value="0.25" />
-=======
-        <entry key="..\:/Users/Kenneth/Desktop/ISC/INNOVATECNM 2022/OliviaStudio/app/src/main/res/layout/activity_perfil_docente.xml" value="0.20512820512820512" />
-        <entry key="..\:/Users/Kenneth/Desktop/ISC/INNOVATECNM 2022/OliviaStudio/app/src/main/res/layout/activity_perfil_estudiante.xml" value="0.20512820512820512" />
->>>>>>> 53d4260ef61e7479f4f59624d73d7c0d7ae1d719
       </map>
     </option>
   </component>
