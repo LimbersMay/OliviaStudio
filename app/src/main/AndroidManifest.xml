@@ -20,6 +20,7 @@
         <activity
             android:name=".InicioActivity"
             android:exported="true" />
+        <activity
             android:name=".PerfilDocenteActivity"
             android:exported="false" />
         <activity
