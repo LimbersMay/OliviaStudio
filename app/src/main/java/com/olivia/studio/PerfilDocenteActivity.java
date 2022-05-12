@@ -20,4 +20,9 @@ public class PerfilDocenteActivity extends AppCompatActivity {
         finish();
     }
 
+    public void irCategoriaMaterias(View view){
+        Intent categoriaMaterias = new Intent(this, Categoria_Docente.class);
+        startActivity(categoriaMaterias);
+        finish();
+    }
 }
