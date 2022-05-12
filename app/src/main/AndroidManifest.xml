@@ -10,17 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OliviaStudio">
         <activity
-            android:name=".Categoria_Docente"
+            android:name=".Categoria_Docente"/>
+        <activity
             android:name=".SplashScreenPerfilDocenteActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".SplashScreenPerfilAlumnoActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".InicioActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".PerfilDocenteActivity"
             android:exported="false" />
