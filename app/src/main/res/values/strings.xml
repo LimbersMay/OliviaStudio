@@ -18,11 +18,12 @@
 
     <!-- Strings de la clase activity registro docente -->
     <string name="registro_docente">Registro docente</string>
-    <string name="nombres_docente">Nombres</string>
+    <string name="nombres_docente">Nombre</string>
     <string name="apellido_paterno">Apellido paterno</string>
     <string name="apellido_materno">Apellido materno</string>
     <string name="fecha_nacimiento">Fecha de nacimiento</string>
-    <string name="nivel_estudios">Nivel de estudios</string>
+    <string name="nivel_estudios">Cédula</string>
+    <string name="codigoPostal">Código postal</string>
     <string name="registrarse">Registrarse</string>
 
     <!-- Strings de la clase activity perfil docente-->
@@ -39,4 +40,13 @@
     <string name="notif_mensajes">Notificaciones mensajes</string>
 
     <string name="context_description">BOTON</string>
+    <string name="nombre">nombre</string>
+    <string name="correo">Correo</string>
+    <string name="pais">Pais</string>
+    <string name="contrase_aa">contraseña</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="c_digo_postal">Código postal</string>
+
+    <string name="presentacion_Alumno">Bienvenida, Diana Cortés</string>
 </resources>
