@@ -21,8 +21,31 @@
 
         </activity> <!-- @style/Theme.OliviaStudio -->
         <activity
+            android:name=".Categoria_Docente"/>
+        <activity
+            android:name=".SplashScreenPerfilDocenteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".SplashScreenPerfilAlumnoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".InicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilDocenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroDocenteActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".BienvenidaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
