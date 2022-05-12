@@ -16,7 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void iniciarSesion(View view){
-        Intent perfil = new Intent(this, activity_activity3_registro_alum.class);
+        Intent perfil = new Intent(this, SplashScreenInicioSesionActivity.class);
         startActivity(perfil);
         finish();
     }
