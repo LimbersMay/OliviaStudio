@@ -11,17 +11,15 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".activity_activity3_registro_alum"
-            android:exported="true">
-
+            android:exported="false">
         </activity>
         <activity
             android:name=".MainActivity2"
             android:exported="false">
-
-
         </activity> <!-- @style/Theme.OliviaStudio -->
         <activity
-            android:name=".Categoria_Docente"/>
+            android:name=".Categoria_Docente"
+            android:exported="false"/>
         <activity
             android:name=".SplashScreenPerfilDocenteActivity"
             android:exported="false"
@@ -38,7 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".RegistroDocenteActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
