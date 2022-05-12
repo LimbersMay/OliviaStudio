@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categoria_Docente"
+    android:background="#F4F6F8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_dynamic_primary90"
+            android:padding="10dp"
+            android:text="@string/categorias"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="#FFEB3B">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="@string/primaria"
+                android:textColor="@color/black"
+                android:textSize="33sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/design_default_color_on_secondary"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:text="seleccionar"
+                android:textColor="#E3BBAD"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-0dp"
+
+                android:src="@mipmap/libro"
+                android:contentDescription="TODO" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:background="@color/teal_200">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="SECUNDARIA"
+                android:textColor="@color/black"
+                android:textSize="33sp" />
+
+            <Button
+                android:id="@+id/B3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#000"
+                android:padding="10dp"
+                android:text="seleccionar"
+                android:textColor="#E3ACAC"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-0dp"
+
+                android:src="@mipmap/libro" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:background="@color/material_dynamic_primary70">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="PREPA"
+                android:textColor="@color/black"
+                android:textSize="33sp" />
+
+            <Button
+                android:id="@+id/B2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#000"
+                android:padding="10dp"
+                android:text="@string/seleccionar"
+                android:textColor="#E1C0B4"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-0dp"
+                android:src="@mipmap/libro" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:background="?android:attr/colorMultiSelectHighlight">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="UNIVERSIDAD"
+                android:textColor="#512DA8"
+                android:textSize="33sp" />
+
+            <Button
+                android:id="@+id/B1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#000"
+                android:padding="10dp"
+                android:text="seleccionar"
+                android:textColor="#F3C5B4"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-0dp"
+
+                android:src="@mipmap/libro" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
