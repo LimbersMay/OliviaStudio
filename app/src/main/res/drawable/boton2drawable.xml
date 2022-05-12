@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- deja redondo las cajas -->
+    <corners android:radius="16dp"/>
+    <!-- para que queden sin fondo los botones y con margen -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/teal_700" />
+</shape>
