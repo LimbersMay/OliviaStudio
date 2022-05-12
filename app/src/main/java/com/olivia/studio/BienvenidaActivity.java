@@ -12,38 +12,34 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-
-public class SplashScreenActivity extends AppCompatActivity {
+public class BienvenidaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_splash_screen);
+        setContentView(R.layout.activity_bienvenida);
 
         //Agregar animaciones
         Animation animacion1 = AnimationUtils.loadAnimation(this,R.anim.desplazamiento_arriba);
         Animation animacion2 = AnimationUtils.loadAnimation(this,R.anim.desplazamiento_abajo);
 
         TextView oliviastudioTextView = findViewById(R.id.oliviastudioTextView);
-        TextView cargandoTextView = findViewById(R.id.cargandoTextView);
-        ImageView logoImageView = findViewById(R.id.logoImageView);
-        ProgressBar progressBar = findViewById(R.id.progressBar);
+        TextView bienvenidoTextView = findViewById(R.id.bienvenidoTextView);
+        ImageView logoBienvenidaImageView = findViewById(R.id.logoBienvenidaImageView);
+
 
         oliviastudioTextView.setAnimation(animacion1);
-        logoImageView.setAnimation(animacion1);
-        cargandoTextView.setAnimation(animacion2);
-        progressBar.setAnimation(animacion2);
+        logoBienvenidaImageView.setAnimation(animacion1);
+        bienvenidoTextView.setAnimation(animacion2);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreenActivity.this, InicioActivity.class);
+                Intent intent = new Intent(BienvenidaActivity.this, SplashScreenPerfilAlumnoActivity.class);
                 startActivity(intent);
                 finish();
             }
         },5000);
-
-
     }
 }
