@@ -35,6 +35,8 @@
     <string name="inf_personal">Información personal</string>
     <string name="contra_seguridad">Contraseña y seguridad</string>
     <string name="tema_app">Tema de la aplicación</string>
+    <string name="salir">Cerrar sesión</string>
+    <string name="categoria_materias">Categoria de materias</string>
 
     <string name="notificaciones">Notificaciones</string>
     <string name="notif_mensajes">Notificaciones mensajes</string>
