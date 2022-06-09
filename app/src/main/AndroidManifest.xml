@@ -26,10 +26,6 @@
             android:value="YOUR_API_KEY" />
 
         <activity
-            android:name=".GoogleMapasActivity"
-            android:exported="false"
-            android:label="@string/title_activity_google_mapas" />
-        <activity
             android:name=".SplashScreenInicioSesionActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -71,7 +67,6 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
