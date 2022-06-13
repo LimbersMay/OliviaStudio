@@ -39,15 +39,15 @@ public class RegistroDocenteActivity extends AppCompatActivity {
         SQLiteDatabase BaseDeDatos = adminDB.getReadableDatabase();
 
         String nombre = nombreTxt.getText().toString();
-        String apellidoPaterno = apellidoPaternoTxt.getText().toString();
-        String apellidoMaterno = apellidoMaternoTxt.getText().toString();
+        String apellido_paterno = apellidoPaternoTxt.getText().toString();
+        String apellido_materno = apellidoMaternoTxt.getText().toString();
         String cedula = cedulaTxt.getText().toString();
-        String codigoPostal = codigoPostalTxt.getText().toString();
+        String codigo_postal = codigoPostalTxt.getText().toString();
         String contrasenia = contraseniaTxt.getText().toString();
 
         // Comprobaciones para saber si el usuario ha puesto datos en los campos
-        if (nombre.isEmpty() || apellidoPaterno.isEmpty() || contrasenia.isEmpty() ||
-                apellidoMaterno.isEmpty() || codigoPostal.isEmpty() || cedula.isEmpty()){
+        if (nombre.isEmpty() || apellido_paterno.isEmpty() || contrasenia.isEmpty() ||
+                apellido_materno.isEmpty() || codigo_postal.isEmpty() || cedula.isEmpty()){
 
             Toast.makeText(this, "No puede haber ningún campo vacío", Toast.LENGTH_LONG).show();
             return;
@@ -57,10 +57,10 @@ public class RegistroDocenteActivity extends AppCompatActivity {
         ContentValues registro = new ContentValues();
 
         registro.put("nombre", nombre);
-        registro.put("apellidoPaterno", apellidoPaterno);
-        registro.put("apellidoMaterno", apellidoMaterno);
+        registro.put("apellido_paterno", apellido_paterno);
+        registro.put("apellido_materno", apellido_materno);
         registro.put("cedula", cedula);
-        registro.put("codigoPostal", codigoPostal);
+        registro.put("codigo_postal", codigo_postal);
         registro.put("contrasenia", contrasenia);
 
         BaseDeDatos.insert("Docente", null, registro);
