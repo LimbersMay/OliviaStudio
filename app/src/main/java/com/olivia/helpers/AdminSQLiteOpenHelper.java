@@ -14,11 +14,11 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase oliviaStudioDB) {
-        oliviaStudioDB.execSQL("CREATE TABLE Alumno(Id_alumno int PRIMARY KEY, nombre text, correo text, contrasenia text, " +
+        oliviaStudioDB.execSQL("CREATE TABLE Alumno(Id_alumno INTEGER PRIMARY KEY, nombre text, correo text, contrasenia text, " +
                 "pais text, codigoPostal text)");
 
-        oliviaStudioDB.execSQL("CREATE TABLE Docente(Id_docente int PRIMARY KEY, nombre text, apellido_paterno text, " +
-                "apellido_materno text, cedula text, codigo_postal text, contrasenia)");
+        oliviaStudioDB.execSQL("CREATE TABLE Docente(Id_docente INTEGER PRIMARY KEY, nombre TEXT, apellido_paterno TEXT, " +
+                "apellido_materno TEXT, cedula TEXT, codigo_postal TEXT, contrasenia TEXT)");
     }
 
     @Override
