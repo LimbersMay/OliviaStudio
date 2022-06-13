@@ -42,7 +42,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    // THis is for Java Connector
-    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.15'
-    runtimeOnly "mysql:mysql-connector-java:8.0.15"
 }
