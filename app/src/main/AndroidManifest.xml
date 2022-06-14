@@ -26,6 +26,10 @@
             android:value="YOUR_API_KEY" />
 
         <activity
+            android:name=".SplashScreenCerrarSesionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".SplashScreenInicioSesionActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

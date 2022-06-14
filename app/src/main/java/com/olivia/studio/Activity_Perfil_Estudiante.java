@@ -15,7 +15,7 @@ public class Activity_Perfil_Estudiante extends AppCompatActivity {
     }
 
     public void cerrarSesion(View view){
-        Intent iniciarSesion = new Intent(this, MainActivity2.class);
+        Intent iniciarSesion = new Intent(this, SplashScreenCerrarSesionActivity.class);
         startActivity(iniciarSesion);
         finish();
     }

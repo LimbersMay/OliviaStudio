@@ -1,6 +1,8 @@
 package com.olivia.studio;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -65,6 +67,12 @@ public class activity_activity3_registro_alum extends AppCompatActivity {
         Intent perfilEstdudiante = new Intent(this, Activity_Perfil_Estudiante.class);
         startActivity(perfilEstdudiante);
 
+        finish();
+    }
+
+    public void Cancelar(View view) {
+        Intent Login = new Intent(this, MainActivity2.class);
+        startActivity(Login);
         finish();
     }
 }

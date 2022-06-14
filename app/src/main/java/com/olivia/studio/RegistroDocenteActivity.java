@@ -1,13 +1,14 @@
 package com.olivia.studio;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.olivia.domain.Docente;
-import com.olivia.helpers.AdminSQLiteOpenHelper;
 import com.olivia.models.DocenteDAO;
 
 public class RegistroDocenteActivity extends AppCompatActivity {
@@ -71,6 +72,11 @@ public class RegistroDocenteActivity extends AppCompatActivity {
 
         Intent perfil = new Intent(this, PerfilDocenteActivity.class);
         startActivity(perfil);
+        finish();
+    }
+    public void Cancelar(View view) {
+        Intent Login = new Intent(this, MainActivity2.class);
+        startActivity(Login);
         finish();
     }
 }
