@@ -10,7 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.olivia.domain.Alumno;
 import com.olivia.helpers.AdminSQLiteOpenHelper;
+import com.olivia.models.AlumnoDAO;
 
 public class activity_activity3_registro_alum extends AppCompatActivity {
 
@@ -34,9 +36,8 @@ public class activity_activity3_registro_alum extends AppCompatActivity {
     }
 
     public void registrar(View view){
-        // NOS CONECTAMOS A LA BASE DE DATOS DE SQLite
-        AdminSQLiteOpenHelper adminDB = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
-        SQLiteDatabase BaseDeDatos = adminDB.getReadableDatabase();
+
+        AlumnoDAO alumnoDAO = new AlumnoDAO(this);
 
         // Obtenemos la información de los campos
         String nombre = nombreTxt.getText().toString();
@@ -51,17 +52,9 @@ public class activity_activity3_registro_alum extends AppCompatActivity {
             return;
         }
 
-        // En caso de que no falte ninguna información, registramos al usuario
-        ContentValues registro = new ContentValues();
-
-        registro.put("nombre", nombre);
-        registro.put("correo", correo);
-        registro.put("contrasenia", contrasenia);
-        registro.put("pais", pais);
-        registro.put("codigoPostal", codigoPostal);
-
-        BaseDeDatos.insert("Alumno", null, registro);
-        BaseDeDatos.close();
+        // Creamos un objeto alumno para registrarlo
+        Alumno alumno = new Alumno(nombre, correo, contrasenia, pais, codigoPostal);
+        alumnoDAO.registrarAlumno(alumno);
 
         // Limpiamos los registros
         nombreTxt.setText("");

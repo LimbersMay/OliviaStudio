@@ -1,16 +1,14 @@
 package com.olivia.studio;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.ContentValues;
-import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.olivia.domain.Docente;
 import com.olivia.helpers.AdminSQLiteOpenHelper;
+import com.olivia.models.DocenteDAO;
 
 public class RegistroDocenteActivity extends AppCompatActivity {
 
@@ -35,8 +33,9 @@ public class RegistroDocenteActivity extends AppCompatActivity {
     }
 
     public void registrarse(View view){
-        AdminSQLiteOpenHelper adminDB = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
-        SQLiteDatabase BaseDeDatos = adminDB.getReadableDatabase();
+
+        // Creamos un objeto de DocenteDAO para poder acceder a la base de datos
+        DocenteDAO docenteDAO = new DocenteDAO(this);
 
         String nombre = nombreTxt.getText().toString();
         String apellido_paterno = apellidoPaternoTxt.getText().toString();
@@ -53,18 +52,11 @@ public class RegistroDocenteActivity extends AppCompatActivity {
             return;
         }
 
-        // En caso de que no falte ninguna información, registramos al usuario
-        ContentValues registro = new ContentValues();
+        // Creamos un objeto de tipo docente
+        Docente docente = new Docente(nombre, apellido_paterno, apellido_paterno, cedula,
+                codigo_postal, contrasenia);
 
-        registro.put("nombre", nombre);
-        registro.put("apellido_paterno", apellido_paterno);
-        registro.put("apellido_materno", apellido_materno);
-        registro.put("cedula", cedula);
-        registro.put("codigo_postal", codigo_postal);
-        registro.put("contrasenia", contrasenia);
-
-        BaseDeDatos.insert("Docente", null, registro);
-        BaseDeDatos.close();
+        docenteDAO.registrarDocente(docente);
 
         // Limpiamos los registros
         nombreTxt.setText("");
@@ -76,9 +68,5 @@ public class RegistroDocenteActivity extends AppCompatActivity {
 
         // Mensaje de confirmación de que se guardó el registro
         Toast.makeText(this, "El registro se completó éxitosamente", Toast.LENGTH_LONG).show();
-    }
-
-    public void cancelar(View view){
-
     }
 }
