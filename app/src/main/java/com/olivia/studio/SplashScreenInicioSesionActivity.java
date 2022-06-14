@@ -39,22 +39,22 @@ public class SplashScreenInicioSesionActivity extends AppCompatActivity {
         Intent padre = getIntent();
         Bundle informacionExtra = padre.getExtras();
 
-        if (informacionExtra.containsKey("docente")){
+        if (informacionExtra.containsKey("Docente")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, SplashScreenPerfilDocenteActivity.class);
+                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, PerfilDocenteActivity.class);
                     startActivity(intent);
                     finish();
                 }
             },5000);
         }
 
-        if (informacionExtra.containsKey("alumno")){
+        if (informacionExtra.containsKey("Alumno")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, SplashScreenPerfilAlumnoActivity.class);
+                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, Activity_Perfil_Estudiante.class);
                     startActivity(intent);
                     finish();
                 }
