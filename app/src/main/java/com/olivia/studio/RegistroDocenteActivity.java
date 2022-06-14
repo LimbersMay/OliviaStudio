@@ -20,4 +20,9 @@ public class RegistroDocenteActivity extends AppCompatActivity {
         startActivity(screenPerfilDocente);
         finish();
     }
+    public void Cancelar(View view) {
+        Intent Login = new Intent(this, MainActivity2.class);
+        startActivity(Login);
+        finish();
+    }
 }
