@@ -34,13 +34,31 @@ public class SplashScreenInicioSesionActivity extends AppCompatActivity {
         iniciandoTextView.setAnimation(animacion2);
         progressBar.setAnimation(animacion2);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(SplashScreenInicioSesionActivity.this, PerfilDocenteActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        },5000);
+        // Comprobamos la información extra que nos llega para saber si se trata de un estudiante
+        // O un docente
+        Intent padre = getIntent();
+        Bundle informacionExtra = padre.getExtras();
+
+        if (informacionExtra.containsKey("docente")){
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, SplashScreenPerfilDocenteActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            },5000);
+        }
+
+        if (informacionExtra.containsKey("alumno")){
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, SplashScreenPerfilAlumnoActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            },5000);
+        }
     }
 }
