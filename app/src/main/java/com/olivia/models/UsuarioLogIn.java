@@ -18,7 +18,7 @@ public class UsuarioLogIn {
         this.context = context;
     }
 
-    public boolean IniciarSesion(String usuario, String contrasenia){
+    public String IniciarSesion(String usuario, String contrasenia){
         // Nos conectamos a la base de datos
         AdminSQLiteOpenHelper adminDB = new AdminSQLiteOpenHelper(context, "administracion", null, 1);
         SQLiteDatabase BaseDeDatos = adminDB.getReadableDatabase();
@@ -34,7 +34,7 @@ public class UsuarioLogIn {
         if (fila.getCount() > 0){
             fila.close(); // Cerramos el cursor
 
-            return true;
+            return "Alumno";
         }
 
         // Comprobamos si las credenciales coinciden con la de algún docente
@@ -42,10 +42,10 @@ public class UsuarioLogIn {
         if (fila.getCount() > 0){
             fila.close(); // Cerramos el cursor
 
-            return true;
+            return "Docente";
         }
 
         // Si llegamos al final quiere decir que no se encontró ningún registro de ambos
-        return false;
+        return null;
     }
 }
