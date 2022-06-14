@@ -76,6 +76,10 @@ public class RegistroDocenteActivity extends AppCompatActivity {
 
         // Mensaje de confirmación de que se guardó el registro
         Toast.makeText(this, "El registro se completó éxitosamente", Toast.LENGTH_LONG).show();
+
+        Intent perfil = new Intent(this, PerfilDocenteActivity.class);
+        startActivity(perfil);
+        finish();
     }
 
     public void cancelar(View view){

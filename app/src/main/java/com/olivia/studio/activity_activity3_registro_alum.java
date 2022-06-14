@@ -71,5 +71,10 @@ public class activity_activity3_registro_alum extends AppCompatActivity {
 
         // Mensaje de confirmación de que se guardó el registro
         Toast.makeText(this, "El registro se completó éxitosamente", Toast.LENGTH_LONG).show();
+
+        Intent perfilEstdudiante = new Intent(this, Activity_Perfil_Estudiante.class);
+        startActivity(perfilEstdudiante);
+
+        finish();
     }
 }

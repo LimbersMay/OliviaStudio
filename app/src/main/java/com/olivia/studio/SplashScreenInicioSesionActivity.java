@@ -43,7 +43,7 @@ public class SplashScreenInicioSesionActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, SplashScreenPerfilDocenteActivity.class);
+                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, PerfilDocenteActivity.class);
                     startActivity(intent);
                     finish();
                 }
@@ -54,7 +54,7 @@ public class SplashScreenInicioSesionActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, SplashScreenPerfilAlumnoActivity.class);
+                    Intent intent = new Intent(SplashScreenInicioSesionActivity.this, Activity_Perfil_Estudiante.class);
                     startActivity(intent);
                     finish();
                 }
