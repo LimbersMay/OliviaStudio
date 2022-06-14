@@ -34,9 +34,11 @@ public class activity_activity3_registro_alum extends AppCompatActivity {
     }
 
     public void registrar(View view){
+        // NOS CONECTAMOS A LA BASE DE DATOS DE SQLite
         AdminSQLiteOpenHelper adminDB = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
         SQLiteDatabase BaseDeDatos = adminDB.getReadableDatabase();
 
+        // Obtenemos la información de los campos
         String nombre = nombreTxt.getText().toString();
         String correo = correoTxt.getText().toString();
         String contrasenia = contraseniaTxt.getText().toString();
