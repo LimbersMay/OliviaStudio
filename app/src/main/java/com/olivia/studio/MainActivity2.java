@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.olivia.helpers.AdminSQLiteOpenHelper;
+import com.olivia.models.UsuarioLogIn;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -29,9 +30,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void iniciarSesion(View view){
 
-        // Comprobamos si el registro que proporcionó el usuario existe
-        AdminSQLiteOpenHelper adminDB = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
-        SQLiteDatabase BaseDataBase = adminDB.getWritableDatabase();
+        // Objeto que nos servirá para validar las credenciales del usuario
+        UsuarioLogIn usuarioLogIn = new UsuarioLogIn(this);
 
         String usuario = usuarioTxt.getText().toString();
         String contrasenia = contraseniaTxt.getText().toString();
@@ -44,34 +44,11 @@ public class MainActivity2 extends AppCompatActivity {
         // Creamos el intent de perfil para navegar hacía él
         Intent perfil = new Intent(this, SplashScreenInicioSesionActivity.class);
 
-        String SQL_SELECT_DOCENTE = "SELECT * FROM Docente WHERE nombre=? AND contrasenia=?";
-        String SQL_SELECT_ALUMNO = "SELECT * FROM Alumno WHERE nombre=? AND contrasenia=?";
+        String registroExitoso = usuarioLogIn.IniciarSesion(usuario, contrasenia);
 
-        // Ponemos en un arreglo los valores de usuario y contrasenia
-        String[] datos = {usuario, contrasenia};
+        if (registroExitoso != null){
+            perfil.putExtra(registroExitoso, true);
 
-        // En caso de que si haya proporcionado ambos datos
-        // Verificamos si la información es la de un docente
-        Cursor fila = null;
-
-        fila = BaseDataBase.rawQuery(SQL_SELECT_DOCENTE, datos);
-        // Verificamos si la fila tiene filas de información
-        if (fila.getCount() > 0){
-            fila.close();
-
-            perfil.putExtra("docente", true);
-            startActivity(perfil);
-            finish();
-
-            return;
-        }
-
-        // Verificamos si la información concuerda con la de un alumno
-        fila = BaseDataBase.rawQuery(SQL_SELECT_ALUMNO, datos);
-        if (fila.getCount() > 0){
-            fila.close();
-
-            perfil.putExtra("alumno", true);
             startActivity(perfil);
             finish();
 
