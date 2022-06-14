@@ -35,11 +35,11 @@ public class SplashScreenInicioSesionActivity extends AppCompatActivity {
         progressBar.setAnimation(animacion2);
 
         // Comprobamos la información extra que nos llega para saber si se trata de un estudiante
-        // O un docente
+        // O un docente 
         Intent padre = getIntent();
         Bundle informacionExtra = padre.getExtras();
 
-        if (informacionExtra.containsKey("docente")){
+        if (informacionExtra.containsKey("Docente")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -50,7 +50,7 @@ public class SplashScreenInicioSesionActivity extends AppCompatActivity {
             },5000);
         }
 
-        if (informacionExtra.containsKey("alumno")){
+        if (informacionExtra.containsKey("Alumno")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
