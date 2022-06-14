@@ -35,7 +35,7 @@ public class SplashScreenInicioSesionActivity extends AppCompatActivity {
         progressBar.setAnimation(animacion2);
 
         // Comprobamos la información extra que nos llega para saber si se trata de un estudiante
-        // O un docente
+        // O un docente 
         Intent padre = getIntent();
         Bundle informacionExtra = padre.getExtras();
 
