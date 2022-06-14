@@ -51,4 +51,5 @@
     <string name="c_digo_postal">Código postal</string>
 
     <string name="presentacion_Alumno">Bienvenida, Diana Cortés</string>
+    <string name="title_activity_google_mapas">GoogleMapasActivity</string>
 </resources>

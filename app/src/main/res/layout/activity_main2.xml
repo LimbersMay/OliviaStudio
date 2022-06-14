@@ -23,7 +23,7 @@
 
     <!-- Caja Input user -->
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/usuario_inicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -43,7 +43,7 @@
 
     <!-- Caja Input password -->
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/contrasenia_inicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -58,7 +58,7 @@
         android:textColorHint="#26A69A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/usuario_inicio"
         tools:ignore="TextContrastCheck" />
 
     <!-- android:textColor="#26A69A" -->
@@ -74,7 +74,7 @@
         android:onClick="iniciarSesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/contrasenia_inicio" />
 
     <Button
         android:id="@+id/Btn_ResgistroAlumno"

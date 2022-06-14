@@ -75,25 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/apellidoPaterno" />
 
     <EditText
-        android:id="@+id/fechaNacimiento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:autofillHints=""
-        android:backgroundTint="@color/teal_700"
-        android:ems="10"
-        android:hint="@string/fecha_nacimiento"
-        android:inputType="date"
-        android:textColorHint="#26A69A"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apellidoMaterno" />
-
-    <EditText
-        android:id="@+id/nivelEstudiosDocente"
+        android:id="@+id/cedula_docente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -103,20 +85,19 @@
         android:backgroundTint="@color/teal_700"
         android:ems="10"
         android:hint="@string/nivel_estudios"
-        android:inputType="text"
+        android:inputType="date"
         android:textColorHint="#26A69A"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fechaNacimiento" />
+        app:layout_constraintTop_toBottomOf="@+id/apellidoMaterno" />
 
     <EditText
-        android:id="@+id/nivelEstudiosDocente2"
+        android:id="@+id/codigo_postal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:autofillHints=""
         android:backgroundTint="@color/teal_700"
@@ -128,7 +109,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fechaNacimiento" />
+        app:layout_constraintTop_toBottomOf="@+id/cedula_docente" />
+
+    <EditText
+        android:id="@+id/contrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/teal_700"
+        android:ems="10"
+        android:hint="@string/contrase_a"
+        android:inputType="text"
+        android:textColorHint="#26A69A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cedula_docente" />
 
     <Button
         android:id="@+id/button"
@@ -143,7 +143,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nivelEstudiosDocente" />
+        app:layout_constraintTop_toBottomOf="@+id/codigo_postal" />
 
     <Button
         android:id="@+id/button4"
@@ -158,5 +158,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nivelEstudiosDocente" />
+        app:layout_constraintTop_toBottomOf="@+id/codigo_postal" />
 </androidx.constraintlayout.widget.ConstraintLayout>
