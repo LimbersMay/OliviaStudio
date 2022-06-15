@@ -36,7 +36,7 @@ public class BienvenidaActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(BienvenidaActivity.this, SplashScreenPerfilAlumnoActivity.class);
+                Intent intent = new Intent(BienvenidaActivity.this, MainActivity2.class);
                 startActivity(intent);
                 finish();
             }

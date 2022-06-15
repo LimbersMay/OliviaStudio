@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerfilDocenteActivity"
+    tools:context=".Activity_Perfil_Estudiante"
     android:background="#202732">
 
     <ImageView
@@ -18,9 +18,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/foto_perfil"
+        app:srcCompat="@drawable/usuario"
         tools:ignore="ImageContrastCheck"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars" /> <!-- @tools:sample/avatars -->
 
     <TextView
         android:id="@+id/textView"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/presentacion_docente"
+        android:text="@string/presentacion_Alumno"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="181dp"
+        android:layout_height="157dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:orientation="vertical"
@@ -137,13 +137,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="28dp"
+            android:layout_height="42dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView15"
                 android:layout_width="200dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:text="@string/tema_app" />
@@ -151,7 +151,7 @@
             <ImageButton
                 android:id="@+id/tema_aplicacion_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
                 android:contentDescription="@string/context_description"
@@ -161,47 +161,23 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="22dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView8"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/salir" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
-                android:contentDescription="@string/context_description"
                 android:onClick="cerrarSesion"
-                app:srcCompat="@android:drawable/ic_media_play" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="22dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/categoria_materias" />
-
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                android:contentDescription="@string/context_description"
-                android:onClick="irCategoriaMaterias"
                 app:srcCompat="@android:drawable/ic_media_play" />
         </LinearLayout>
 
@@ -273,7 +249,7 @@
             android:background="@null"
             android:contentDescription="@string/context_description"
             app:srcCompat="@drawable/notificacion_resized"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
 
         <ImageButton
             android:id="@+id/imageButton11"
@@ -283,7 +259,7 @@
             android:background="@null"
             android:contentDescription="@string/context_description"
             app:srcCompat="@drawable/buscar"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
 
         <ImageButton
             android:id="@+id/imageButton12"
@@ -306,5 +282,19 @@
             tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="@string/context_description"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class PerfilDocenteActivity extends AppCompatActivity {
+public class Activity_Perfil_Estudiante extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil_docente);
+        setContentView(R.layout.activity_perfil_estudiante);
     }
 
     public void cerrarSesion(View view){

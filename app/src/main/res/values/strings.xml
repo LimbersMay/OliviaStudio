@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">OliviaStudio</string>
+    <string name="ImagenIn">imageView1</string>
+    <string name="CorrigiendoErrores">Imageboton</string>
+    <string name="IniciarSesion">Iniciar sesión</string>
+    <string name="ResgistroAlumno">Registro alumno</string>
+    <string name="ReggistroDocente">Registro docente</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="Twetter">Twetters</string>
+    <string name="usuario">Usuario</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="todo">TODO</string>
 
     <string name="PRIMARIA">OliviaStudio</string>
     <string name="seleccionar">seleccionar</string>
@@ -9,11 +19,12 @@
 
     <!-- Strings de la clase activity registro docente -->
     <string name="registro_docente">Registro docente</string>
-    <string name="nombres_docente">Nombres</string>
+    <string name="nombres_docente">Nombre</string>
     <string name="apellido_paterno">Apellido paterno</string>
     <string name="apellido_materno">Apellido materno</string>
     <string name="fecha_nacimiento">Fecha de nacimiento</string>
-    <string name="nivel_estudios">Nivel de estudios</string>
+    <string name="nivel_estudios">Cédula</string>
+    <string name="codigoPostal">Código postal</string>
     <string name="registrarse">Registrarse</string>
 
     <!-- Strings de la clase activity perfil docente-->
@@ -25,10 +36,22 @@
     <string name="inf_personal">Información personal</string>
     <string name="contra_seguridad">Contraseña y seguridad</string>
     <string name="tema_app">Tema de la aplicación</string>
+    <string name="salir">Cerrar sesión</string>
+    <string name="categoria_materias">Categoria de materias</string>
 
     <string name="notificaciones">Notificaciones</string>
     <string name="notif_mensajes">Notificaciones mensajes</string>
 
     <string name="context_description">BOTON</string>
     <string name="title_activity_maps">Maps</string>
+    <string name="nombre">nombre</string>
+    <string name="correo">Correo</string>
+    <string name="pais">Pais</string>
+    <string name="contrase_aa">contraseña</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="c_digo_postal">Código postal</string>
+
+    <string name="presentacion_Alumno">Bienvenida, Diana Cortés</string>
+    <string name="title_activity_google_mapas">GoogleMapasActivity</string>
 </resources>

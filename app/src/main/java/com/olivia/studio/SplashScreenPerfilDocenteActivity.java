@@ -37,7 +37,7 @@ public class SplashScreenPerfilDocenteActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreenPerfilDocenteActivity.this, InicioActivity.class);
+                Intent intent = new Intent(SplashScreenPerfilDocenteActivity.this, PerfilDocenteActivity.class);
                 startActivity(intent);
                 finish();
             }
