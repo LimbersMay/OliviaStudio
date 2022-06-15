@@ -5,6 +5,7 @@
     <string name="seleccionar">seleccionar</string>
     <string name="categorias">CATEGORIAS</string>
     <string name="primaria">PRIMARIA</string>
+    <string name="strmapa">PRIMARIA</string>
 
     <!-- Strings de la clase activity registro docente -->
     <string name="registro_docente">Registro docente</string>
@@ -29,4 +30,5 @@
     <string name="notif_mensajes">Notificaciones mensajes</string>
 
     <string name="context_description">BOTON</string>
+    <string name="title_activity_maps">Maps</string>
 </resources>

@@ -4,22 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Categoria_Docente"
-    android:background="#F4F6F8">
+    android:background="#de4756"
+    tools:context=".Categoria_Docente">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/material_dynamic_primary90"
-            android:padding="10dp"
+
+            android:background="#0a12f0"
+            android:padding="15dp"
             android:text="@string/categorias"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="40sp" />
 
         <RelativeLayout
@@ -39,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="@color/design_default_color_on_secondary"
+
                 android:backgroundTint="@color/black"
                 android:padding="10dp"
                 android:text="seleccionar"
@@ -47,13 +50,13 @@
                 android:textSize="20sp" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="115dp"
+                android:layout_height="110dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
+                android:layout_marginTop="5dp"
 
-                android:src="@mipmap/libro"
-                android:contentDescription="TODO" />
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/primario" />
 
         </RelativeLayout>
 
@@ -68,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:padding="25dp"
                 android:text="SECUNDARIA"
-                android:textColor="@color/black"
+                android:textColor="#0f030d"
                 android:textSize="33sp" />
 
             <Button
@@ -76,33 +79,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="#000"
+                android:backgroundTint="@color/black"
                 android:padding="10dp"
                 android:text="seleccionar"
-                android:textColor="#E3ACAC"
+                android:textColor="#E3BBAD"
                 android:textSize="20sp" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="115dp"
+                android:layout_height="110dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
+                android:layout_marginTop="5dp"
 
-                android:src="@mipmap/libro" />
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/lib" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_margin="10dp"
-            android:background="@color/material_dynamic_primary70">
+            android:background="#67e64e">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="176dp"
                 android:layout_height="wrap_content"
+                android:background="#67e64e"
                 android:padding="25dp"
                 android:text="PREPA"
-                android:textColor="@color/black"
+                android:textColor="#0f030d"
                 android:textSize="33sp" />
 
             <Button
@@ -110,17 +115,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="#000"
+
+                android:backgroundTint="@color/black"
                 android:padding="10dp"
                 android:text="@string/seleccionar"
-                android:textColor="#E1C0B4"
+                android:textColor="#E3BBAD"
                 android:textSize="20sp" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="115dp"
+                android:layout_height="110dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:src="@mipmap/libro" />
         </RelativeLayout>
 
@@ -135,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:padding="25dp"
                 android:text="UNIVERSIDAD"
-                android:textColor="#512DA8"
+                android:textColor="@color/black"
                 android:textSize="33sp" />
 
             <Button
@@ -143,24 +150,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="#000"
+                android:backgroundTint="@color/black"
                 android:padding="10dp"
                 android:text="seleccionar"
                 android:textColor="#F3C5B4"
                 android:textSize="20sp" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="115dp"
+                android:layout_height="110dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
+                android:layout_marginTop="5dp"
 
-                android:src="@mipmap/libro" />
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/conocimiento" />
         </RelativeLayout>
 
     </LinearLayout>
-
-
 
 
 </ScrollView>

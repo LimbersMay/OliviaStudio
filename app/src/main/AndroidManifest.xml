@@ -9,15 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OliviaStudio">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD82oJ-k_enJbjiHLMv5mAiLD4lMo2qS78" />
+
         <activity
-            android:name=".Categoria_Docente"
-            android:name=".SplashScreenPerfilDocenteActivity"
+            android:name=".Maps"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:label="@string/strmapa">
+
+
+        </activity>
+        <activity
+            android:name=".SplashScreenPerfilDocenteActivity"
+            android:exported="true" />
         <activity
             android:name=".SplashScreenPerfilAlumnoActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:exported="true" />
         <activity
             android:name=".InicioActivity"
             android:exported="true" />
@@ -32,13 +52,13 @@
             android:exported="false" />
         <activity
             android:name=".BienvenidaActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         </activity>
     </application>
 
