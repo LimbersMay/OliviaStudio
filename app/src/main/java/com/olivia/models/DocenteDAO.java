@@ -30,7 +30,7 @@ public class DocenteDAO {
         registro.put("codigo_postal", docente.getCedula());
         registro.put("contrasenia", docente.getContrasenia());
 
-        BaseDeDatos.insert("Alumno", null, registro);
+        BaseDeDatos.insert("Docente", null, registro);
         BaseDeDatos.close();
     }
 }
