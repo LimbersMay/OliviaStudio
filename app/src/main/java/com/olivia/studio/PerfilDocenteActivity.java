@@ -25,4 +25,10 @@ public class PerfilDocenteActivity extends AppCompatActivity {
         startActivity(categoriaMaterias);
         finish();
     }
+
+    public void accederCamara(View view){
+        Intent accederCamara = new Intent(this, CameraActivity.class);
+        startActivity(accederCamara);
+        finish();
+    }
 }

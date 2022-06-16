@@ -174,7 +174,7 @@
             <ImageButton
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@null"
                 android:onClick="cerrarSesion"
@@ -282,6 +282,21 @@
             tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="accederCamara"
+        android:text="Cámara"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
     <ImageButton
         android:id="@+id/imageButton18"
