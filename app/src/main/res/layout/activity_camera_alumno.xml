@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CameraAlumnoActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonCamera"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/CorrigiendoErrores"
+        android:src="@drawable/camara"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:contentDescription="@string/CorrigiendoErrores"
+        app:srcCompat="@drawable/logo2" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/CorrigiendoErrores"
+        android:onClick="back"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="ImageContrastCheck" />
+
+
+</LinearLayout>

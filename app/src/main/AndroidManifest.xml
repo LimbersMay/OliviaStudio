@@ -2,15 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.olivia.studio">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
         android:theme="@style/Theme.AppCompat.NoActionBar">
-
+        <activity
+            android:name=".CameraAlumnoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -25,11 +33,11 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD82oJ-k_enJbjiHLMv5mAiLD4lMo2qS78" />
+
         <activity
             android:name=".Maps"
             android:exported="true"
-            android:label="@string/strmapa">
-        </activity>
+            android:label="@string/strmapa" />
         <activity
             android:name=".SplashScreenCerrarSesionActivity"
             android:exported="false"
@@ -40,10 +48,10 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activity_activity3_registro_alum"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="false"/> <!-- @style/Theme.OliviaStudio -->
+            android:exported="false" /> <!-- @style/Theme.OliviaStudio -->
         <activity
             android:name=".Categoria_Docente"
             android:exported="false" />
@@ -74,8 +82,9 @@
             android:name=".BienvenidaActivity"
             android:exported="true">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
