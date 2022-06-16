@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <!--
@@ -23,8 +24,12 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
-
+            android:value="AIzaSyD82oJ-k_enJbjiHLMv5mAiLD4lMo2qS78" />
+        <activity
+            android:name=".Maps"
+            android:exported="true"
+            android:label="@string/strmapa">
+        </activity>
         <activity
             android:name=".SplashScreenCerrarSesionActivity"
             android:exported="false"
@@ -67,11 +72,10 @@
             android:exported="false" />
         <activity
             android:name=".BienvenidaActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

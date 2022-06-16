@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BienvenidaActivity">
+    tools:context=".BienvenidaActivity"
+    android:background="@color/white">
 
 
     <ImageView
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:text="OliviaStudio"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/logoBienvenidaImageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,6 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Te damos la bienvenida"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/logoBienvenidaImageView"
         app:layout_constraintEnd_toEndOf="parent"
